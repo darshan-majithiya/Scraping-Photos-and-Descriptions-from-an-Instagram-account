@@ -1,3 +1,11 @@
+"""
+Hey Everyone!
+This program can be used to scrape photos from any Instagram account (Offcourse, only if you follow that account or it’s an open account) and write the photo description for each photo to Excel Sheet.
+"""
+__author__ = "Darshan Majithiya"
+__email__ = "darsh2115@gmail.com"
+
+
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,11 +25,6 @@ class Scraper:
         self.base_path = os.path.join('data', self.target_username) # change it as per requirement
         self.imagesData_path = os.path.join(self.base_path, 'images') # change it as per requirement 
         self.descriptionsData_path = os.path.join(self.base_path, 'descriptions') # change it as per requirement
-        '''
-            You can download ChromeDriver at the following page, select the latest release and the download the package dedicated to your operating system (Linux, Mac, or Windows) into your machine:
-                
-                https://sites.google.com/a/chromium.org/chromedriver/downloads
-        '''
         self.driver = webdriver.Chrome('chromedriver_linux64/chromedriver') # I'm using linux. You can change it as per your OS.
         self.main_url = 'https://www.instagram.com'
         
