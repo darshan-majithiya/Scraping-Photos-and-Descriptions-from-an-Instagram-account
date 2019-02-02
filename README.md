@@ -4,14 +4,14 @@ It can be used to scrape photos from any Instagram account (Offcourse, only if y
 ## Dependencies
 You need Python 3.x on your system to run this program.
 
-There are some handful of libraries you need to install beforehand. You can easily install them using python package manager pip.
+There are some handful of libraries you need to install beforehand. You can easily install them using python package manager **pip**.
 
-- requests
-- BeautifulSoup
-- lxml (For parsing the data. Although, you can use any other parser as well.)
-- Selenium
+- requests 2.x
+- BeautifulSoup 4.x
+- lxml 4.x (For parsing the data. Although, you can use any other parser as well.)
+- Selenium 3.x
+
 Also, Browser Driver will be required to control it. I’ll be using ChromeDriver for Linux.
-
 You can download ChromeDriver at the following page, select the latest release and then download the package dedicated to your operating system (Linux, Mac, or Windows) into your machine: https://sites.google.com/a/chromium.org/chromedriver/downloads.
 
 If you prefer any other browser or are operating on any other OS, then you can use driver exclusive to that browser and to that OS. You can change the path to the driver in instaScraper.py by changing the value of self.driver.
