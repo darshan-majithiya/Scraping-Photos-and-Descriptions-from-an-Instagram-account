@@ -40,7 +40,6 @@ class Scraper:
         self.login()
         self.close_dialog_box()
         self.open_target_profile()
-        #self.scroll_down()
 
         # check if the directory to store data exists
         if not os.path.exists('data'):
